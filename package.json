@@ -1,0 +1,12 @@
+{
+  "name": "course-tabnews-clone",
+  "version": "1.0.0",
+  "repository": "git@github.com:AurinoJunior/course-tabnews-clone.git",
+  "author": "Aurino Geraldo <aurinoaj@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
