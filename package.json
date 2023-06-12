@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "repository": "git@github.com:AurinoJunior/course-tabnews-clone.git",
   "author": "Aurino Geraldo <aurinoaj@gmail.com>",
+  "scripts": {
+    "dev": "next dev"
+  },
   "license": "MIT",
   "dependencies": {
     "next": "13.1.6",
