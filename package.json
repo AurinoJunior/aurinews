@@ -4,12 +4,16 @@
   "repository": "git@github.com:AurinoJunior/course-tabnews-clone.git",
   "author": "Aurino Geraldo <aurinoaj@gmail.com>",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:fix": "prettier --write ."
   },
   "license": "MIT",
   "dependencies": {
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
   }
 }
