@@ -38,6 +38,7 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 
 ## :beers: Como usar
 
+Site disponivel em https://aurinews.com.br/
 Em construção
 
 ## :page_with_curl: Licença
