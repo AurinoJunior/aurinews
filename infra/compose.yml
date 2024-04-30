@@ -1,0 +1,8 @@
+services:
+  database:
+    image: "postgres:16.0-alpine3.18"
+    environment:
+      - POSTGRES_PASSWORD=dev123
+    ports:
+      - 5432:5432
+    container_name: postgres_db
