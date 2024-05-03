@@ -1,5 +1,5 @@
 <div align="center">
-   <h3>TABNEWS</h3>
+   <h3>Tabnews clone</h3>
 </div>
 
 <p align="center">
