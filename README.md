@@ -34,8 +34,9 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 
 1. Clone o repositorio e instale as dependencias com `yarn install`.
 2. Crie o arquivo `.env` a partir do `.env.example`
-3. Rode o comando `docker compose -f infra/compose.yml up` para subir os containers
-4. Em construção
+3. Rode o comando `yarn dev` para subir os containers e o server da aplicação.
+4. Rode as migrations `migration:up`
+5. Em construção
 
 ## :beers: Como usar
 
