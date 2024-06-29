@@ -3,8 +3,12 @@ import { join } from "node:path"
 import database from "infra/database.js"
 
 export default async function (request, response) {
-  const client = await database.getNewClient()
+  const allowedMethods = ["GET", "POST"]
+  if(!allowedMethods.includes(request.method)) {
+    return response.status(405).send()
+  }
 
+  const client = await database.getNewClient()
   const migrationOptions = {
     dbClient: client,
     dir: join("infra", "migrations"),
@@ -18,8 +22,8 @@ export default async function (request, response) {
       ...migrationOptions,
       dryRun: true
     })
-    await client.end()
 
+    await client.end()
     return response.status(200).json(penddingMigrations);
   }
 
@@ -32,7 +36,4 @@ export default async function (request, response) {
     }
     return response.status(200).json(runMigrations);
   }
-
-  await client.end()
-  return response.status(405)
 }
