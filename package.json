@@ -7,7 +7,7 @@
     "node": ">= 18"
   },
   "scripts": {
-    "dev": "yarn services:up && next dev",
+    "dev": "yarn services:up && yarn wait-for-postgres && yarn migration:up && next dev",
     "services:up": "docker compose -f infra/compose.yml up -d",
     "services:stop": "docker compose -f infra/compose.yml stop",
     "services:down": "docker compose -f infra/compose.yml down",
@@ -16,7 +16,8 @@
     "test": "jest --runInBand",
     "test:watch": "jest --watchAll --runInBand",
     "migration:create": "node-pg-migrate --migrations-dir infra/migrations create",
-    "migration:up": "node-pg-migrate --migrations-dir infra/migrations up"
+    "migration:up": "node-pg-migrate --migrations-dir infra/migrations up",
+    "wait-for-postgres": "node infra/scripts/wait-for-postgres.js"
   },
   "license": "MIT",
   "dependencies": {
