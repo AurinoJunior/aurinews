@@ -34,14 +34,13 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 
 1. Clone o repositorio e instale as dependencias com `yarn install`.
 2. Crie o arquivo `.env` a partir do `.env.example`
-3. Rode o comando `yarn dev` para subir os containers e o server da aplicação.
-4. Rode as migrations `migration:up`
-5. Em construção
+3. Rode o comando `yarn dev` para subir os containers, o server da aplicação e rodar as migrations.
+4. Em construção...
 
 ## :beers: Como usar
 
 Site disponivel em https://aurinews.com.br/
-Em construção
+Em construção...
 
 ## :page_with_curl: Licença
 
