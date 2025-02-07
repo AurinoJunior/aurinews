@@ -13,7 +13,7 @@
     "services:down": "docker compose -f infra/compose.yml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test": "yarn services:up && yarn wait-for-postgres && concurrently -n next,jest --hide next -k -s command-jest 'next dev' 'jest --runInBand'",
+    "test": "yarn services:up && concurrently -n next,jest --hide next -k -s command-jest 'next dev' 'jest --runInBand --verbose'",
     "test:watch": "jest --watchAll --runInBand",
     "migration:create": "node-pg-migrate --migrations-dir infra/migrations create",
     "migration:up": "node-pg-migrate --migrations-dir infra/migrations up",
