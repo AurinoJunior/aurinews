@@ -10,6 +10,7 @@ async function waitForAllServices() {
       },
       {
         retries: 100,
+        maxTimeout: 1000, //1 second
       }
     );
   }
