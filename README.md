@@ -34,8 +34,10 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 
 1. Clone o repositorio e instale as dependencias com `yarn install`.
 2. Crie o arquivo `.env` a partir do `.env.example`
-3. Rode o comando `yarn dev` para subir os containers, o server da aplicação e rodar as migrations.
-4. Em construção...
+3. Garanta que o docker está iniciado no sistema.
+4. Rode o comando `yarn dev` para subir os containers, o server da aplicação e rodar as migrations.
+5. É possivel rodar os testes isoladamente com o comandao `yarn test`.
+6. Em construção...
 
 ## :beers: Como usar
 
