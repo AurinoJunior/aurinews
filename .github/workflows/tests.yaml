@@ -1,0 +1,16 @@
+name: Automated Tests
+
+on: pull_request
+
+jobs:
+  jest:
+    name: Jest Ubuntu
+    runs-on: ubuntu-latest # sistema onde sera rodado
+    steps:
+      - uses: actions/checkout@v4 #actions sao extensoes
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/hydrogen"
+      - run: yarn install --frozen-lockfile # garante as dependencias do yarn.lock
+      - run: cp .env.example .env
+      - run: yarn test
