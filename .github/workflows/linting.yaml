@@ -3,8 +3,8 @@ name: Linting
 on: pull_request
 
 jobs:
-  prettier:
-    name: Prettier
+  lint:
+    name: Linters
     runs-on: ubuntu-latest # sistema onde sera rodado
     steps:
       - uses: actions/checkout@v4 #actions sao extensoes
@@ -13,3 +13,4 @@ jobs:
           node-version: "lts/hydrogen"
       - run: yarn install --frozen-lockfile # garante as dependencias do yarn.lock
       - run: yarn lint:prettier:check
+      - run: yarn lint

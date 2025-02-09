@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "plugins": ["unused-imports"],
+  "rules": {
+    "unused-imports/no-unused-imports": "warn",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/no-anonymous-default-export": "off"
+  }
+}
