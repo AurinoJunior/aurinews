@@ -41,8 +41,23 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 
 ## :beers: Como usar
 
-Site disponivel em https://aurinews.com.br/
 Em construção...
+
+Site disponivel em https://aurinews.com.br/
+
+### Padrão de commits
+
+Por conveção o projeto possui uma validação no hook `commit-msg` onde é validado se a mensagem de commit segue as regras do `commitlint`.
+
+Para referências futuras essas são as principais do projeto:
+
+- feat: Adiciona uma nova funcionalidade ao código.
+- fix: Corrige um bug no código.
+- docs: Alterações na documentação, sem modificar o código-fonte.
+- test: Adição, remoção ou modificação de testes apenas testes.
+- refactor: Melhorias no código sem alterar comportamento (nem bug nem feature nova).
+- chore: Configurações do projeto, fora da pasta src ou test.
+- ci: Alterações em arquivos de configuração de CI/CD.
 
 ## :page_with_curl: Licença
 
