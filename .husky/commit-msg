@@ -1,0 +1,5 @@
+# Antes de fazer o commit depois de passar uma msg
+# git commit -m
+# pega a msg de commit e joga no input do commitlint
+
+npx commitlint --edit $1
