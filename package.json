@@ -4,7 +4,7 @@
   "repository": "git@github.com:AurinoJunior/course-tabnews-clone.git",
   "author": "Aurino Geraldo <aurinoaj@gmail.com>",
   "engines": {
-    "node": ">= 18"
+    "node": ">=18"
   },
   "scripts": {
     "dev": "yarn services:up && yarn wait-for-postgres && yarn migration:up && next dev",
