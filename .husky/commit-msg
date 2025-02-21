@@ -1,5 +1,4 @@
-# Antes de fazer o commit depois de passar uma msg
-# git commit -m
-# pega a msg de commit e joga no input do commitlint
+# Antes de fazer o commit depois de passar uma msg `git commit -m`
+# pega a msg de commit e joga no input do commitlint na variavel $1
 
 npx commitlint --edit $1

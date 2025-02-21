@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   lint:
-    name: Linters
+    name: code_lint
     runs-on: ubuntu-latest # sistema onde sera rodado
     steps:
       - uses: actions/checkout@v4 #actions sao extensoes
@@ -15,7 +15,7 @@ jobs:
       - run: yarn lint:prettier:check
       - run: yarn lint
   commitlint:
-    name: commitlint
+    name: commit_lint
     runs-on: ubuntu-latest # sistema onde sera rodado
     steps:
       - uses: actions/checkout@v4 #actions sao extensoes
