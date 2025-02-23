@@ -8,6 +8,8 @@
   },
   "scripts": {
     "dev": "yarn services:up && yarn services:wait:database && yarn migrations:up && next dev",
+    "test": "yarn services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand --verbose\"",
+    "test:watch": "jest --watchAll --runInBand",
     "services:up": "docker compose -f infra/compose.yml up -d",
     "services:stop": "docker compose -f infra/compose.yml stop",
     "services:down": "docker compose -f infra/compose.yml down",
@@ -16,9 +18,7 @@
     "migrations:up": "node-pg-migrate --migrations-dir infra/migrations up",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
-    "lint": "next lint --dir .",
-    "test": "yarn services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand --verbose\"",
-    "test:watch": "jest --watchAll --runInBand",
+    "lint:eslint": "next lint --dir .",
     "prepare": "husky"
   },
   "license": "MIT",
