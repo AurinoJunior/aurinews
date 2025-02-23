@@ -13,7 +13,7 @@ jobs:
           node-version: "lts/hydrogen"
       - run: yarn install --frozen-lockfile # garante as dependencias do yarn.lock
       - run: yarn lint:prettier:check
-      - run: yarn lint
+      - run: yarn lint:eslint
   commitlint:
     name: commit_lint
     runs-on: ubuntu-latest # sistema onde sera rodado
