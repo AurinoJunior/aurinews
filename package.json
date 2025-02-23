@@ -7,7 +7,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "dev": "yarn services:up && yarn services:wait:database && yarn migrations:up && next dev",
+    "dev": "./infra/scripts/start.sh",
     "test": "yarn services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand --verbose\"",
     "posttest": "yarn services:stop",
     "test:watch": "jest --watchAll --runInBand",
