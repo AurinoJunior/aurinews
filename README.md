@@ -15,8 +15,8 @@
 
 - [Contexto](#blue_book-contexto)
 - [Tecnologias](#computer-tecnologias)
-- [Iniciando o projeto](#video_game-iniciando-o-projeto)
-- [Como usar](#beers-como-usar)
+- [Iniciando no projeto](#video_game-iniciando-no-projeto)
+- [Links uteis](#beers-links-uteis)
 - [Licença](#page_with_curl-licença)
 
 ## :blue_book: Contexto
@@ -30,7 +30,7 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 - Docker
 - PostgreSQL
 
-## :video_game: Codando no projeto
+## :video_game: Iniciando no projeto
 
 1. Clone o repositorio e instale as dependencias com `yarn install`.
 2. Crie o arquivo `.env` a partir do `.env.example`
