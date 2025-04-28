@@ -30,20 +30,13 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 - Docker
 - PostgreSQL
 
-## :video_game: Iniciando o projeto
+## :video_game: Codando no projeto
 
 1. Clone o repositorio e instale as dependencias com `yarn install`.
 2. Crie o arquivo `.env` a partir do `.env.example`
 3. Garanta que o docker está iniciado no sistema.
 4. Rode o comando `yarn dev` para subir os containers, o server da aplicação e rodar as migrations.
 5. É possivel rodar os testes isoladamente com o comandao `yarn test`.
-6. Em construção...
-
-## :beers: Como usar
-
-Em construção...
-
-Site disponivel em https://aurinews.com.br/
 
 ### Padrão de commits
 
@@ -58,6 +51,12 @@ Para referências futuras essas são as principais do projeto:
 - refactor: Melhorias no código sem alterar comportamento (nem bug nem feature nova).
 - chore: Configurações do projeto, fora da pasta src ou test.
 - ci: Alterações em arquivos de configuração de CI/CD.
+
+## :beers: Links uteis
+
+- **Site url:** https://aurinews.com.br/
+- **Hospedagem:** https://vercel.com/
+- **Banco de dados:** https://console.neon.tech/
 
 ## :page_with_curl: Licença
 
