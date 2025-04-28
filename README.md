@@ -16,7 +16,7 @@
 - [Contexto](#blue_book-contexto)
 - [Tecnologias](#computer-tecnologias)
 - [Iniciando o projeto](#video_game-iniciando-o-projeto)
-- [Como usar](#beers-como-usar)
+- [Como usar](#beers-links-uteis)
 - [Licença](#page_with_curl-licença)
 
 ## :blue_book: Contexto
@@ -39,11 +39,11 @@ Esse projeto foi criado ao longo dos dias do https://curso.dev com o professor F
 5. É possivel rodar os testes isoladamente com o comandao `yarn test`.
 6. Em construção...
 
-## :beers: Como usar
+## :beers: Links uteis
 
-Em construção...
-
-Site disponivel em https://aurinews.com.br/
+**Site url:** https://aurinews.com.br/
+**Hospedagem:** https://vercel.com/
+**Banco de dados:** https://console.neon.tech/
 
 ### Padrão de commits
 
